@@ -49,6 +49,8 @@ void dosya_indir(int soket) {
     ofs.close();
 }
 
+std::string ip;
+
 void hedefe_baglan() {
     int soket = socket(AF_INET, SOCK_STREAM, 0);
     if (soket == -1) {
